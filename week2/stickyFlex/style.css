@@ -1,0 +1,39 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+header{
+    border: 3px solid darkblue;
+    background-color: bisque;
+}
+footer{
+    border: 3px dashed darkgreen;
+    background-color: bisque;
+}
+header, footer{
+    display: flex;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    top: 0;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    color: lightslategrey;
+    display: flex;
+    justify-content: space-between;
+
+}
+a:hover{
+    color: bisque;
+    background-color: azure;
+}
+li{
+    list-style-type: none;
+}
+header li{
+    display: flex;
+    justify-content: space-around;
+}
