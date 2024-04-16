@@ -1,0 +1,27 @@
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 300 to 800*/
+
+header,main  {
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+html{
+    box-sizing: border-box;
+}
+main{
+    font-size: 2em;
+}
+strong{
+    font-size: 3rem;
+}
+#big{
+    font-size: 2rem;
+}
+#bigger{
+    font-size: 4rem;
+}
+#biggest{
+    font-size: 5rem;
+}
