@@ -1,0 +1,27 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+    display: flexbox;
+    min-height: 100vh;
+}
+nav{
+    display: flex;
+    border: 3px solid gray;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+a{
+    flex-grow: 1;
+    padding: 8px;
+    margin: 10px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid green;
+    background-color:#59A1AF;
+}
