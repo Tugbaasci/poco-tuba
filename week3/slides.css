@@ -4,11 +4,12 @@ html{
 }
 *, *::before,*::after{
     box-sizing: inherit;
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
 }
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 ul{
     display: flex;
@@ -17,6 +18,7 @@ ul{
     list-style: none;
     padding: 0;
     overflow-x: hidden;
+    
 }
 main li {
     background: red;
@@ -27,13 +29,13 @@ main li {
     flex-shrink: 0;
     height: 60vh;
     width: 100vw;
-    transition: transform 0.5s ease-in-out;
 }
 main ul{
     justify-content: flex-start;
     gap: 0;
     overflow-x: hidden;
-    
+    transform: translateX(0);
+    transition: transform 0.5 ease-in-out;
 }
 main li:first-of-type{
     background-color: blue;
@@ -41,6 +43,6 @@ main li:first-of-type{
 main li:last-of-type{
     background-color: green;
 }
-/*main li:target{
-transform: translateX(-100%);
-}*/
+main li:target{
+opacity: 100;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+   <div id="thick-black-line"></div> 
+   <h1>Profil</h1>
+   <p id="info">Hier können Sie Ihre Adress-Angaben einsehen und anpassen</p>
+    <div class="black-line"></div>
+    <section>
+        <h3>Persönliche Daten</h3>
+        <form action="#">
+            <div class="sect">
+                <label for="title">Titel</label>
+                <input type="text" id="title" name="title" placeholder="optional">
+            </div>
+            <div class="sect">
+                <label for="vorname">Vorname</label>
+                <input type="text" id="vorname" name="vorname" placeholder="Muster">
+            </div>
+            <div class="sect">
+                <label for="nachname">Nachname</label>
+                <input type="text" id="nachname" name="nachname">
+            </div>
+            <div class="sect">
+                <span>Geschlecht</span>
+                <input type="radio" id="w" name="geschlecht">
+                <label for="w" value="W">W</label>
+                <input type="radio" id="m" name="geschlecht" value="M">
+                <label for="m">M</label>
+            </div>
+            <div class="sect">
+                <span>Sprache</span>
+                <input type="radio" id="d" name="sprache" value="D"> 
+                <label for="d">D</label>
+                <input type="radio" id="fr" name="sprache" value="FR"> 
+                <label for="fr">FR</label>
+                <input type="radio" id="it" name="sprache" value="IT">
+                <label for="d">IT</label>
+            </div>
+        </form>
+    </section> 
+    <div class="black-line"></div>
+    <section>
+        <h3>Kontaktdaten</h3>
+        <form action="#">
+            <div>
+                <label for="telefon">Telefon</label>
+                <input type="tel" id="telefon" name="telefon">
+            </div>
+            <div> 
+                <label for="mobile">Mobile</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="optional">
+            </div>
+           <div>
+                <label for="hnummer">Hauptnummer</label>
+                <input type="tel" id="hnummer" name="hnummer" placeholder="optional">
+            </div>
+            <div>
+                <label for="fax">Fax</label>
+                <input type="tel" id="fax" name="fax" placeholder="optional">
+            </div>
+            <div>
+                <label for="mail1">Mail 1</label>
+                <input type="email" id="mail1" name="mail1">
+            </div>
+            <div>
+                <label for="mail2">Mail 2</label>
+                <input type="email" id="mail2" name="mail2" placeholder="optional">
+            </div>
+        </form>
+    </section> 
+    <div class="black-line"></div>
+    <section>
+        <h3>Adressdaten</h3>
+        <form action="#">
+            <div>
+                <label for="firma">Firma</label>
+                <input type="text" id="firma" name="firma">
+            </div>
+            <div>
+                <label for="zusatzfirma">Zusatz Firma</label>
+                <input type="text" id="zusatzfirma" name="zusatzfirma" placeholder="optional">
+            </div>
+            <div>
+                <label for="homepage">Home Page</label>
+                <input type="text" id="homepage" name="homepage" placeholder="optional">
+            </div>
+            <div>
+                <label for="address">Adresse / Haus Nr</label>
+                <input type="text" id="address" name="address">
+                <input type="text" id="address" name="address">
+            </div>
+            <div>
+                <label for="zusatzaddresse">Zusatz Adresse</label>
+            
+                <input type="text" id="zusatzaddresse" name="zusatzaddresse" placeholder="optional">
+            </div>
+            <div>
+                <label for="postfach">Postfach</label>
+                <input type="text" id="postfach" name="postfach" placeholder="optional">
+            </div>
+            <div>
+                <label for="plz-ort">PLZ / Ort</label>
+                <input type="number" id="plz-ort" name="plz-ort">
+                <input type="text" id="plz-ort" name="plz-ort">
+            </div>
+             <div>
+                <label for="kanton-land">Kanton / Land</label>
+                <input type="text" id="kanton-land" name="kanton-land" placeholder="optional">
+                <input type="text" id="kanton-land" name="kanton-land" placeholder="optional">
+            </div>            
+        </form>
+    </section> 
+
+    <input type="submit" value="Speichern">
+          
+   
+</body>
+</html>
