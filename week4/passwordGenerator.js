@@ -1,0 +1,12 @@
+const specialChars = ['@','#','$','%','&','-','_'];
+const numbers = "0123456789";
+const letters ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const randomSpecialIndex = Math.floor(Math.random()*specialChars.length);
+const randomSpecial = specialChars[randomSpecialIndex];
+console.log(randomSpecial);
+const randomNumbersIndex = Math.floor(Math.random()*numbers.length);
+const randomNumber = numbers[randomNumbersIndex];
+console.log(randomNumber);
+const randomLettersIndex = Math.floor(Math.random()*letters.length);
+const randomLetter = letters[randomLettersIndex];
+console.log(randomLetter);
