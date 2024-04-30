@@ -1,0 +1,19 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgb(250, 227, 227);
+    height: 5vw;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;    
+}
+ul{
+    list-style-type: none;
+}
+
