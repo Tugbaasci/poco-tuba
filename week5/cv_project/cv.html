@@ -6,6 +6,7 @@
     <title>POWERCODERS ZÜRICH</title>
     <link rel="stylesheet" href="cv_header.css">
     <link rel="stylesheet" href="cv_main.css">
+    <link rel="stylesheet" href="modal.css">
 </head>
 <body>
     <header>
@@ -20,7 +21,7 @@
     </header>
     <main>
         <ul id="images">
-            <li class="person"><button><img src="./images/Enes-2.jpg" alt="Enes"></button></li>
+            <li class="person" id="openModalBtn"><button><img src="./images/Enes-2.jpg" alt="Enes"></button></li>
             <li class="person"><button><img src="./images/Frank-2.jpg" alt="Frank"></button></li>
             <li class="person"><button><img src="./images/Juan-2.jpg" alt="Juan"></button></li>
             <li class="person"><button><img src="./images/Kashif-2.jpg" alt="Kashif"></button></li>
@@ -33,7 +34,14 @@
             <li class="person"><button><img src="./images/Violetta-2.jpg" alt="Violetta"></button></li>
             <li class="person"><button><img src="./images/Yuri-2.jpg" alt="Yuri"></button></li>
         </ul>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Modal içeriği buraya gelecek.</p>
+            </div>
+          </div>
     </main>
    <script src="cv.js"></script> 
+   <script src="modal.js"></script>
 </body>
 </html>
