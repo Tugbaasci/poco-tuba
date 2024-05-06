@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Calculator</title>
+</head>
+<body>
+
+<div id="inputs">
+  <input type="number" id="input1" onchange="calculateSum()">
+</div>
+
+<p id="result"></p>
+
+<script>
+function calculateSum() {
+  // Sayı girişi yapılan tüm inputları seç
+  const inputElements = document.querySelectorAll('input[type="number"]');
+  
+  // Toplamı saklamak için bir değişkeni sıfırla
+  let sum = 0;
+  
+  // Her input elemanı için işlem yap
+  inputElements.forEach(input => {
+    // Kullanıcının girdiği değeri al
+    const userInput = input.value;
+    
+    // Kullanıcının girdiği değeri sayıya çevir
+    const numberValue = parseFloat(userInput);
+    
+    // Eğer kullanıcının girdiği değer sayıya çevrilemiyorsa, 0 olarak varsay
+    const valueToAdd = isNaN(numberValue) ? 0 : numberValue;
+    
+    // Toplama ekle
+    sum += valueToAdd;
+  });
+
+  // Toplamı göster
+  console.log("Toplam: " + sum);
+}
+</script>
+
+</body>
+</html>
